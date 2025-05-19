@@ -1,120 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الصفحة الرئيسية - فتاوى ابن باز</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: 'Droid Arabic Naskh', sans-serif;
-            background-color: #f5f5f5;
             direction: rtl;
+            background-color: #f5f5f5;
+            margin: 0;
         }
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
+        .header {
+            background-color: #0b2239;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
-        .logo__sup {
-            font-size: 14px;
-        }
-        .logo__img {
-            max-height: 80px;
-        }
-        .main-header {
-            background: #fff;
-            border-bottom: 1px solid #eee;
-            padding: 10px 0;
-        }
-        .main-navbar__item {
-            padding: 10px;
-        }
-        .heading {
-            margin-top: 20px;
-            border-bottom: 2px solid #193043;
-            padding-bottom: 5px;
-        }
-        .heading__text {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .heading__left {
-            float: left;
-            font-size: 14px;
-        }
-        .fatwa-list {
-            margin-top: 15px;
-        }
-        .fatwa-item {
-            background: #fff;
-            padding: 10px;
+        .header img {
+            height: 50px;
             margin-bottom: 10px;
-            border-right: 4px solid #337ab7;
         }
-        .fatwa-item h4 {
-            margin-top: 0;
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .fatwa-sections {
+            padding: 30px 15px;
+        }
+        .fatwa-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: background-color 0.2s;
+        }
+        .fatwa-box:hover {
+            background-color: #eef4fa;
+        }
+        .fatwa-box a {
+            color: #0b2239;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="main-header row">
-        <div class="col-sm-3 text-center">
-            <a href="/">
-                <div class="logo__sup">الموقع الرسمي لسماحة الشيخ</div>
-                <img src="https://binbaz.org.sa/img/site-logo.png" alt="BinBaz Logo" class="logo__img">
-            </a>
-        </div>
-        <div class="col-sm-9">
-            <form class="form-inline" method="GET" action="/search">
-                <div class="form-group">
-                    <input type="text" name="q" class="form-control" placeholder="كلمة البحث..">
-                </div>
-                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
+
+<div class="header">
+    <img src="https://binbaz.org.sa/img/site-logo.png" alt="شعار ابن باز">
+    <h1>الموقع الرسمي لسماحة الشيخ ابن باز - الفتاوى</h1>
+</div>
+
+<div class="container fatwa-sections">
+    <div class="fatwa-box">
+        <a href="https://your-site.com/nour">نور على الدرب</a>
+    </div>
+    <div class="fatwa-box">
+        <a href="https://your-site.com/lessons">فتاوى الدروس</a>
+    </div>
+    <div class="fatwa-box">
+        <a href="https://your-site.com/masjid">فتاوى الجامع الكبير</a>
+    </div>
+    <div class="fatwa-box">
+        <a href="https://your-site.com/majmoo">مجموع الفتاوى</a>
     </div>
 </div>
 
-<nav class="navbar navbar-default">
-    <div class="container">
-        <ul class="nav navbar-nav">
-            <li><a href="/">الرئيسية</a></li>
-            <li><a href="#nour">فتاوى</a></li>
-            <li><a href="/audios">صوتيات</a></li>
-            <li><a href="/videos">مرئيات</a></li>
-            <li><a href="/books">كتب</a></li>
-            <li><a href="/articles">مقالات</a></li>
-            <li><a href="/discussions">لقاءات</a></li>
-            <li><a href="/speeches">مراسلات</a></li>
-        </ul>
-    </div>
-</nav>
-
-<div class="container" id="nour">
-    <div class="heading">
-        <span class="heading__text"><i class="fa fa-bullhorn"></i> فتاوى نور على الدرب</span>
-        <span class="heading__left"><a href="/fatwas">المزيد</a></span>
-    </div>
-
-    <div class="fatwa-list">
-        <div class="fatwa-item">
-            <h4>ما حكم الصلاة في الملابس التي عليها صور؟</h4>
-            <p>الصلاة في الملابس التي عليها صور من ذوات الأرواح مكروهة، وإذا كانت الصور ظاهرة وواضحة، فيُخشى من بطلان الصلاة بها.</p>
-        </div>
-        <div class="fatwa-item">
-            <h4>ما حكم من نسي قراءة الفاتحة في الركعة الأولى؟</h4>
-            <p>من نسي قراءة الفاتحة في الركعة الأولى وتذكر بعد الركوع، فإن الركعة لا تُحسب، ويجب عليه أن يأتي بركعة بدلًا عنها.</p>
-        </div>
-        <div class="fatwa-item">
-            <h4>هل يجوز إخراج زكاة الفطر نقدًا؟</h4>
-            <p>لا يجوز إخراج زكاة الفطر نقدًا على القول الراجح، وإنما تُخرج طعامًا كما فعل النبي صلى الله عليه وسلم وأصحابه.</p>
-        </div>
-    </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
-    </html>
+</html>
