@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
@@ -44,6 +43,18 @@
             float: left;
             font-size: 14px;
         }
+        .fatwa-list {
+            margin-top: 15px;
+        }
+        .fatwa-item {
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-right: 4px solid #337ab7;
+        }
+        .fatwa-item h4 {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -64,11 +75,13 @@
             </form>
         </div>
     </div>
-</div><nav class="navbar navbar-default">
+</div>
+
+<nav class="navbar navbar-default">
     <div class="container">
         <ul class="nav navbar-nav">
             <li><a href="/">الرئيسية</a></li>
-            <li><a href="/fatwas">فتاوى</a></li>
+            <li><a href="#nour">فتاوى</a></li>
             <li><a href="/audios">صوتيات</a></li>
             <li><a href="/videos">مرئيات</a></li>
             <li><a href="/books">كتب</a></li>
@@ -77,11 +90,31 @@
             <li><a href="/speeches">مراسلات</a></li>
         </ul>
     </div>
-</nav><div class="container">
+</nav>
+
+<div class="container" id="nour">
     <div class="heading">
-        <span class="heading__text"> <i class="fa fa-fatwa"></i> <a href="/fatwas">الفتاوى</a></span>
+        <span class="heading__text"><i class="fa fa-bullhorn"></i> فتاوى نور على الدرب</span>
         <span class="heading__left"><a href="/fatwas">المزيد</a></span>
     </div>
-    <!-- قائمة الفتاوى تظهر هنا -->
-</div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></body>
-</html>
+
+    <div class="fatwa-list">
+        <div class="fatwa-item">
+            <h4>ما حكم الصلاة في الملابس التي عليها صور؟</h4>
+            <p>الصلاة في الملابس التي عليها صور من ذوات الأرواح مكروهة، وإذا كانت الصور ظاهرة وواضحة، فيُخشى من بطلان الصلاة بها.</p>
+        </div>
+        <div class="fatwa-item">
+            <h4>ما حكم من نسي قراءة الفاتحة في الركعة الأولى؟</h4>
+            <p>من نسي قراءة الفاتحة في الركعة الأولى وتذكر بعد الركوع، فإن الركعة لا تُحسب، ويجب عليه أن يأتي بركعة بدلًا عنها.</p>
+        </div>
+        <div class="fatwa-item">
+            <h4>هل يجوز إخراج زكاة الفطر نقدًا؟</h4>
+            <p>لا يجوز إخراج زكاة الفطر نقدًا على القول الراجح، وإنما تُخرج طعامًا كما فعل النبي صلى الله عليه وسلم وأصحابه.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+    </html>
